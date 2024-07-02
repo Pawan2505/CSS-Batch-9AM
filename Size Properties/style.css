@@ -1,0 +1,43 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+div {
+  padding: 10px;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+}
+
+/* Fixed Size */
+.size {
+  width: 300px;
+  height: 150px;
+  background-color: #007bff;
+}
+
+/* Minimum Size */
+.min-size {
+  min-width: 200px;
+  min-height: 100px;
+  background-color: #28a745;
+}
+
+/* Maximum Size */
+.max-size {
+  max-width: 400px;
+  max-height: 200px;
+  background-color: #ffc107;
+}
+
+/* Responsive Size */
+.responsive-size {
+  width: 50%;
+  height: 20vh;
+  background-color: #17a2b8;
+}

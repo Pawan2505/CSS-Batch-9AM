@@ -1,0 +1,18 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Playwrite+US+Trad:wght@100..400&display=swap"); */
+
+body {
+}
+
+.head {
+  /* font-family: "Playwrite US Trad", cursive; */
+  /* text-align: center; */
+  background-color: #f2f2f2f2;
+  line-height: 100px;
+  letter-spacing: 5px;
+  word-spacing: 20px;
+  /* text-decoration: underline; */
+  font-style: normal;
+  font-weight: lighter;
+  text-transform: uppercase;
+  /* text-indent: 200px; */
+}

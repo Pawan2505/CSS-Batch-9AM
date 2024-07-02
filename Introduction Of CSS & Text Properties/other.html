@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: brown;
+            height: 100px;
+            width: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: myanimation 5s infinite alternate;
+            position: absolute;
+
+        }
+
+        @keyframes myanimation {
+
+            0%{
+                background-color: antiquewhite;
+                left: 0;
+                top: 0;
+            }
+            25%{
+                background-color: azure;
+                left: 200px;
+                top: 200px;
+            }
+            50%{
+                background-color: bisque;
+                left: 300px;
+                top: 100px;
+            }
+            75%{
+                background-color: black;
+                left: 400px;
+                top: 300px;
+            }
+            100%{
+                background-color:red;
+                left: 300px;
+                top: 200px;
+            }
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">Hello World!</div>
+</body>
+</html>

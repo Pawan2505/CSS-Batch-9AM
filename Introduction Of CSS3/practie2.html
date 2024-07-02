@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .transform {
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+            display: inline-block;
+            margin: 50px;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        .scale {
+            background-color: aquamarine;
+            transform: scale(1.5);
+        }
+
+        .rotate {
+            background-color: cornflowerblue;
+            transform: rotate(45deg);
+        }
+
+        .skew {
+            background-color: rgb(211, 196, 196);
+            transform: skew(20deg, 10deg);
+        }
+
+        .translate {
+            background-color: azure;
+            transform: translate(100px, 200px);
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Scale, Rotate, Skew, Translate -->
+
+    <div class="transform scale">Scale</div>
+    <div class="transform rotate">Rotate</div>
+    <div class="transform skew">Skew</div>
+    <div class="transform translate">Translate</div>
+</body>
+
+</html>

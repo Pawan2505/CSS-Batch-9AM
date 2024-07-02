@@ -1,0 +1,64 @@
+/* External CSS: 
+                External CSS refers to storing CSS rules in a separate file and linking it to an HTML document using the <link> element. */
+
+/* @Media Queries:
+            @media queries allow for conditional styling based on characteristics of the device, such as screen size, resolution, orientation, etc.
+            Useful for creating responsive designs that adapt to different devices and screen sizes.
+
+            Example :
+
+            @media screen and (max-width: 600px) {
+                body {
+                    background-color: lightblue;
+                }
+            }
+             */
+
+
+     /* @Keyframes:
+             Definition: @keyframes rule specifies the animation code. It allows you to control the intermediate steps in a CSS animation sequence.
+                         Essential for creating complex animations in CSS, enabling precise control over the animation sequence.
+
+            Example:
+
+             @keyframes slidein {
+                from {
+                    transform: translateX(100%);
+                }
+                to {
+                    transform: translateX(0%);
+                }
+            }
+
+             */
+
+
+
+ /* 
+ 
+Details, .Class, #Id:
+
+Details: These are CSS selectors used to target HTML elements for styling.
+
+.Class Selector: Targets elements based on their class attribute. Syntax: .classname { styles }.
+
+#Id Selector: Targets elements based on their id attribute. Syntax: #idname { styles }.
+
+Usage: Allows for selective styling of specific elements, promoting code reusability and modularity. */
+
+
+/* Disadvantages:
+
+Decreases code readability.
+
+Difficult to maintain consistency across the site.
+
+Not recommended for large-scale styling. */
+            
+
+
+#box{
+    background-color: red;
+    width: 100%;
+    height: 100vh;
+}

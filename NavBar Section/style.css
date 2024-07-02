@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  padding: 5px;
+  background-color: rgb(74, 54, 146);
+  color: #fff;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.unorder_list {
+  display: flex;
+  list-style: none;
+  margin-left: auto;
+  padding: 0;
+}
+
+li {
+  margin: 0px 50px;
+  font-size: 18px;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(74, 54, 146);
+  }
+  .unorder_list {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  li {
+    margin: 10px 0px;
+  }
+}

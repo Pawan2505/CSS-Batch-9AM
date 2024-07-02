@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            background-color: cadetblue;
+            height: 500px;
+        }
+
+        .box {
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+
+            /* transition-timing-function: ease;
+            transition-duration: 5s;
+            transition-delay: 2s; */
+
+            transition: all 4s ease-in 1s;
+            /* transition-property: transform, background-color; */
+            
+
+        }
+
+        .move {
+            transform: translateX(500px) translateY(100px);
+            /* background-color: brown; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box move"></div>
+    </div>
+</body>
+
+</html>

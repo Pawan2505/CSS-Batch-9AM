@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Media Query</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+            background-color: #fff;
+
+            /* flex-wrap: wrap; */
+
+        }
+
+        .box {
+            text-align: center;
+            justify-content: center;
+            border: 5px solid #ddd;
+            width: 400px;
+            height: 100px;
+            margin: 30px;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        /* 1. Small (Mobile): */
+
+
+        @media (max-width: 600px) {
+            .container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin: 0% 10%;
+            }
+        }
+
+
+        /* 2. Medium (Tablet): */
+
+
+        @media (min-width: 601px) and (max-width: 900px) {}
+
+
+
+        /* 3. Large (Desktop): */
+
+
+        @media (min-width: 901px) and (max-width: 1200px) {}
+
+
+
+        /* 4. Extra Large (Large Desktop): */
+
+
+
+        @media (min-width: 1201px) {}
+    </style>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="box box1">
+            <div class="icon"><i class="fa-brands fa-youtube"></i></div>
+            <div>Lorem ipsum.</div>
+            <div>Lorem ipsum dolor sit amet.</div>
+        </div>
+        <div class="box box2">
+            <div class="icon"><i class="fa-brands fa-google"></i></div>
+            <div>Lorem, ipsum.</div>
+            <div>Lorem ipsum dolor sit amet.</div>
+        </div>
+        <div class="box box3">
+            <div class="icon"><i class="fa-brands fa-github"></i></div>
+            <div>Lorem, ipsum.</div>
+            <div>Lorem ipsum dolor sit amet.</div>
+        </div>
+
+    </div>
+</body>
+
+</html>

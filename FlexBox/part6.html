@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox flex-basis</title>
+    <style>
+        .container {
+            display: flex;
+            border: 1px solid #ccc;
+            height: 200px;
+            background-color: #f9f9f9;
+        }
+
+        .item {
+            padding: 10px;
+            border: 1px solid #000;
+            background-color: #e0e0e0;
+        }
+
+        .item1 {
+            flex-basis: 100px;
+            /* Item will start with a width of 100px */
+        }
+
+        .item2 {
+            flex-basis: 30%;
+            /* Item will start with a width of 30% of the container */
+        }
+
+        .item3 {
+            flex-basis: auto;
+            /* Item will use its content size or width property */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item item1">Item 1</div>
+        <div class="item item2">Item 2</div>
+        <div class="item item3">Item 3</div>
+    </div>
+</body>
+
+</html>

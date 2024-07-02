@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .navbar {
+            display: flex;
+            background-color: #f0f0f0;
+            justify-content: space-between;
+        }
+
+        .logo {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin: 10px 0px 0px 100px;
+
+        }
+
+        .nav-manu ul {
+            display: flex;
+            margin: 0px 200px;
+            line-height: 50px;
+        }
+
+        .nav-manu li {
+            list-style: none;
+            margin-left: 20px;
+        }
+
+        @media (min-width: 601px) and (max-width: 900px) {
+            .navbar {
+                flex-direction: column;
+            }
+
+            .imagelogo {
+                display: flex;
+                justify-content: center;
+            }
+
+            .nav-manu ul {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .logo {
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="imagelogo">
+            <img src="./rnw.jfif" alt="" class="logo">
+        </div>
+        <div class="nav-manu">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Service</li>
+                <li>Page</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+    </nav>
+</body>
+
+</html>

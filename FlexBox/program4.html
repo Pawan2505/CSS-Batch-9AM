@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After</title>
+
+    <style>
+        p::before {
+            content: "Hello Before!";
+        }
+
+        p::after {
+            content: "Hello After!";
+        }
+
+        .container::before {
+            content: "This is div container";
+            background-color: aqua;
+        }
+
+        .container::after {
+            content: "This is div container";
+            background-color: rgb(255, 0, 0);
+        }
+
+        .head::before {
+            content: url('https://www.istockphoto.com/photo/female-handball-players-celebrating-victory-after-match-gm1434391488-476023156');
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, voluptate!</p>
+
+    <div class="container">
+        <h1 class="head">Lorem ipsum dolor sit.</h1>
+    </div>
+</body>
+
+</html>

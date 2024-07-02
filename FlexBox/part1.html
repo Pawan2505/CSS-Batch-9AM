@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS FlexBox</title>
+</head>
+<style>
+    /* Part 1 */
+    .container1 {
+        border: 2px solid rebeccapurple;
+        display: flex;
+    }
+
+    .item1 {
+        height: 100px;
+        width: 100px;
+        margin: 4px;
+        background-color: blue;
+        border: 2px solid black;
+    }
+
+    /* part 2 */
+
+
+    .container2 {
+        height: 300px;
+        border: 2px solid rebeccapurple;
+        display: flex;
+        /* justify-content: center; */
+        /* justify-content: end; */
+        /* justify-content: flex-end; */
+        /* justify-content: start; */
+        /* justify-content: flex-start; */
+        /* justify-content: baseline; */
+        /* justify-content: space-around; */
+        /* justify-content: space-between; */
+        /* justify-content: left; */
+        /* justify-content: right; */
+        /* justify-content: space-evenly; */
+
+        /* align-items: center; */
+        /* align-items: end; */
+        /* align-items: baseline; */
+        /* align-items: start; */
+        /* align-items: flex-end; */
+        /* align-items: flex-start; */
+
+        flex-wrap: wrap;
+
+    }
+
+    .item2 {
+        height: 100px;
+        width: 100px;
+        margin: 4px;
+        background-color: blue;
+        border: 2px solid black;
+    }
+
+    /* Part - 3 */
+
+
+    .container3 {
+        height: 300px;
+        border: 2px solid rebeccapurple;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        /* flex-direction: column; */
+        /* flex-direction: column-reverse; */
+    }
+
+    .item3 {
+        height: 100px;
+        width: 100px;
+        margin: 4px;
+        background-color: blue;
+        border: 2px solid black;
+    }
+</style>
+
+<body>
+
+    <!-- Part - 1 -->
+
+    <main>
+        <div class="container1">
+            <div class="item1"></div>
+            <div class="item1"></div>
+            <div class="item1"></div>
+            <div class="item1"></div>
+            <div class="item1"></div>
+        </div>
+    </main>
+    <br>
+    <hr>
+    <br>
+    <!-- Part - 2 -->
+    <main>
+        <div class="container2">
+            <div class="item2"></div>
+            <div class="item2"></div>
+            <div class="item2"></div>
+            <div class="item2"></div>
+            <div class="item2"></div>
+        </div>
+    </main>
+
+    <!-- Part -3 -->
+
+    <br>
+    <hr>
+    <br>
+
+    <main>
+        <div class="container3">
+            <div class="item3">1</div>
+            <div class="item3">2</div>
+            <div class="item3">3</div>
+            <div class="item3">4</div>
+            <div class="item3">5</div>
+        </div>
+    </main>
+
+</body>
+
+</html>

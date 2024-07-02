@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+.para {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+}
+
+.para1 {
+  font-family: "Roboto Mono", monospace;
+}
+
+.para2 {
+  text-align: left;
+}
+div.a {
+  text-align: center;
+}
+
+div.b {
+  text-align: left;
+}
+
+div.c {
+  text-align: right;
+}
+
+div.d {
+  text-align: justify;
+}
+
+.line {
+  line-height: 100px;
+  letter-spacing: 5px;
+  word-spacing: 20px;
+}
+
+.decoration {
+  font-style: unset;
+}
+
+.text {
+  text-indent: 100px;
+  text-transform: inherit;
+}

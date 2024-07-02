@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positioning</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 100%;
+            height: 200px;
+            margin: 20px 0;
+            background-color: #f0f0f0;
+            overflow: auto;
+            /* To demonstrate overflow */
+            border: 1px solid #ccc;
+            position: relative;
+            /* For relative and absolute positioning demonstration */
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            color: white;
+            display: inline-block;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        .static {
+            background-color: red;
+            position: static;
+        }
+
+        .absolute {
+            background-color: blue;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        .relative {
+            background-color: green;
+            position: relative;
+            top: 20px;
+            left: 20px;
+        }
+
+        .fixed {
+            background-color: purple;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+        }
+
+        .sticky {
+            background-color: orange;
+            position: -webkit-sticky;
+            /* For Safari */
+            position: sticky;
+            top: 0;
+        }
+
+        .zindex1 {
+            background-color: pink;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            z-index: 1;
+        }
+
+        .zindex2 {
+            background-color: cyan;
+            position: absolute;
+            top: 80px;
+            left: 80px;
+            z-index: 2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Positioning</h1>
+
+    <div class="container">
+        <div class="box static">Static</div>
+        <div class="box absolute">Absolute</div>
+        <div class="box relative">Relative</div>
+        <div class="box fixed">Fixed</div>
+        <div class="box sticky">Sticky</div>
+        <div class="box zindex1">Z-Index 1</div>
+        <div class="box zindex2">Z-Index 2</div>
+    </div>
+
+    <p>Scroll down to see the fixed and sticky boxes in action.</p>
+
+</body>
+
+</html>

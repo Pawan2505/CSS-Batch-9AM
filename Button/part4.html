@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            position: relative;
+            overflow: hidden;
+            width: 200px;
+            height: 60px;
+            border-radius: 10px;
+        }
+
+        .box-hover {
+            position: absolute;
+            background-color: #f0f0f0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            color: #3515a8;
+            overflow: hidden;
+        }
+
+        .box-hover::before,
+        .box-hover::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #cb2f2f;
+            transition: transform 0.5s ease;
+        }
+
+        .box-hover::before {
+            left: -100%;
+        }
+
+        .box-hover::after {
+            right: -100%;
+        }
+
+        .container:hover .box-hover::before {
+            transform: translateX(100%);
+        }
+
+        .container:hover .box-hover::after {
+            transform: translateX(-100%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <a href="https://www.google.com/search?q=mdn&rlz=1C1ONGR_enIN1094IN1094&oq=mdn&gs_lcrp=EgZjaHJvbWUyDggAEEUYJxg5GIAEGIoFMgYIARBFGEAyDwgCEAAYQxixAxiABBiKBTIPCAMQABgUGIcCGLEDGIAEMgYIBBBFGD0yBggFEAUYQDIGCAYQRRg9MgYIBxBFGD3SAQg4ODkxajBqN6gCCLACAQ&sourceid=chrome&ie=UTF-8" class="box-hover">Click me!</a>
+    </div>
+
+</body>
+
+</html>

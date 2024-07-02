@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            padding: 10px;
+            align-items: center;
+            justify-content: space-between;
+            background-color: aqua;
+        }
+
+        .header {
+            list-style: none;
+            display: flex;
+            margin-left: auto;
+            padding: 0;
+        }
+
+        .header li {
+            margin: 0 50px;
+        }
+
+        .header a {
+            font-size: 18px;
+            text-decoration: none;
+        }
+
+        @media (max-width:693px) {
+            .container {
+            display: flex;
+            flex-direction: column;
+            color: white;
+            background-color: rgb(98, 35, 161);
+        }
+
+        .header {
+                flex-direction: column;
+                width: 100%;
+               
+            }
+            .header li {
+                margin: 10px 0;
+               
+            }
+            .header a{
+                color: white;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+          <h1>LOGO</h1>
+        </div>
+        <div>
+            <ul class="header">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">News</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

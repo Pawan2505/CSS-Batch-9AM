@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button with Hover Box</title>
+    
+    <style>
+        .button {
+            display: inline-block;
+            height: 100px;
+            width: 100px;
+            background-color: green;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            position: relative;
+            margin: 200px;
+            overflow: hidden;
+        }
+
+        .button .hover-box {
+            position: absolute;
+            width: 50%;
+            height: 50%;
+            background-color: red;
+            transition: all 0.3s ease;
+        }
+
+        .hover-left-top {
+            top: -100%;
+            left: 0;
+        }
+
+        .hover-right-top {
+            top: -100%;
+            right: 0;
+        }
+
+        .hover-left-bottom {
+            bottom: -100%;
+            left: 0;
+        }
+
+        .hover-right-bottom {
+            bottom: -100%;
+            right: 0;
+        }
+
+        .button:hover .hover-left-top {
+            top: 0;
+        }
+
+        .button:hover .hover-right-top {
+            top: 0;
+        }
+
+        .button:hover .hover-left-bottom {
+            bottom: 0;
+        }
+
+        .button:hover .hover-right-bottom {
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="button">
+        <div class="hover-box hover-left-top"></div>
+       jjjjj
+    </div>
+</body>
+</html>

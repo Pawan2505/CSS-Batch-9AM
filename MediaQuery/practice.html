@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Column Box Section</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .column-box {
+            background-color: #f0f0f0;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            width: 300px;
+            transition: transform 0.3s;
+        }
+
+        .column-box:hover {
+            transform: scale(1.05);
+        }
+
+        .icon {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .content {
+            font-size: 16px;
+        }
+
+      
+        @media (max-width: 768px) {
+            .column-box {
+                width: 45%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .column-box {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="column-box">
+            <div class="icon"><i class="fas fa-laptop-code"></i></div>
+            <div class="title">Web Development</div>
+            <div class="content">Build modern and responsive websites.</div>
+        </div>
+        <div class="column-box">
+            <div class="icon"><i class="fas fa-mobile-alt"></i></div>
+            <div class="title">Mobile Apps</div>
+            <div class="content">Create apps for Android and iOS platforms.</div>
+        </div>
+        <div class="column-box">
+            <div class="icon"><i class="fas fa-cloud"></i></div>
+            <div class="title">Cloud Services</div>
+            <div class="content">Deploy and manage cloud infrastructure.</div>
+        </div>
+    </div>
+</body>
+
+</html>

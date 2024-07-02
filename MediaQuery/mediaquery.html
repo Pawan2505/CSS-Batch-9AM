@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query2</title>
+    <style>
+
+        .container{
+            display: flex;
+            flex-direction: column; /* Added default flex direction */
+            flex-wrap: wrap; /* Added flex wrap to handle wrapping */
+        }
+
+        h1{
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            text-align: center;
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+        }
+
+        #box1{
+            background-color: aqua;
+        }
+        #box2{
+            background-color: bisque;
+        }
+        #box3{
+            background-color: yellow;
+        }
+
+    @media (min-width: 600px){ 
+        .container{
+            flex-direction: row;
+        }
+        h1{
+            margin: 5px;
+        }
+    } 
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="box1">Hello</h1>
+        <h1 id="box2">Hey</h1>
+        <h1 id="box3">World</h1>
+    </div>
+</body>
+</html>

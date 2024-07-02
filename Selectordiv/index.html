@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors and Pseudo-elements</title>
+    <style>
+        div {
+            background-color: lightblue;
+        }
+
+        p {
+            color: green;
+        }
+
+        div p {
+            font-weight: bold;
+        }
+
+        div>p {
+            margin-left: 20px;
+        }
+
+        p::first-letter {
+            font-size: 200%;
+            color: red;
+        }
+
+        p::first-line {
+            font-weight: bold;
+        }
+
+        div p:first-child {
+            text-decoration: underline;
+        }
+
+        div p:last-child {
+            font-style: italic;
+        }
+
+        div p:nth-child(2) {
+            color: blue;
+        }
+
+        div p:nth-last-child(1) {
+            color: purple;
+        }
+
+        h1::selection {
+            background: yellow;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>This is the first paragraph.</p>
+        <p>This is the second paragraph.</p>
+        <p>This is the last paragraph.</p>
+
+    </div>
+    <h1>Lorem, ipsum.</h1>
+</body>
+
+</html>

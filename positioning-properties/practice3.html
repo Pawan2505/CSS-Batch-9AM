@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative and absolute</title>
+
+    <style>
+        .box {
+            height: 100px;
+            width: 100px;
+            margin: 50px;
+            display: inline-block;
+            text-align: center;
+            line-height: 100px;
+
+        }
+
+        .container {
+            position: relative;
+            width: 500px;
+            height: 500px;
+            background-color: beige;
+        }
+
+        .box1 {
+            background-color: antiquewhite;
+            position: absolute;
+
+            /* z-index: 2; */
+        }
+
+        .box2 {
+            background-color: rgb(178, 112, 32);
+            position: absolute;
+            z-index: -2;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box box1">BOX 1</div>
+        <div class="box box2">Box 2</div>
+
+    </div>
+
+
+
+</body>
+
+</html>

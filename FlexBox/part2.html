@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS FlexBox</title>
+</head>
+<style>
+    /* Part 1 */
+    .container1 {
+        height: 70vh;
+        border: 2px solid rebeccapurple;
+        display: flex;
+        /* flex-wrap: wrap; */
+        flex-wrap: wrap-reverse;
+        align-content: center;
+    }
+
+    .item1 {
+        height: 100px;
+        width: 100px;
+        margin: 4px;
+        background-color: blue;
+        border: 2px solid black;
+    }
+
+    /* Part 2 */
+    .container2 {
+        height: 70vh;
+        border: 2px solid rebeccapurple;
+        display: flex;
+        /* align-content: center; */
+        /* align-content: flex-start; */
+        /* align-content: flex-end; */
+        /* align-content: end; */
+        /* align-content: start; */
+        flex-wrap: wrap;
+        align-content: flex-start;
+        /* flex-flow: row; */
+        /* flex-flow: row-reverse; */
+        /* flex-flow: row row-reverse; */
+        flex-flow: row wrap-reverse;
+        /* gap: 30px; */
+        /* gap: 40px 20px; */
+        /* column-gap: 50px; */
+        /* row-gap: 30px; */
+
+        gap: 40px 10px;
+
+
+    }
+
+    .item2 {
+        height: 100px;
+        width: 100px;
+        margin: 4px;
+        background-color: blue;
+        border: 2px solid black;
+    }
+</style>
+
+<body>
+
+    <!-- Part - 1 -->
+
+    <main>
+        <div class="container1">
+            <div class="item1"></div>
+            <div class="item1"></div>
+            <div class="item1"></div>
+            <div class="item1"></div>
+            <div class="item1"></div>
+            <div class="item1"></div>
+            <div class="item1"></div>
+            <div class="item1"></div>
+            <div class="item1"></div>
+            <div class="item1"></div>
+            <div class="item1"></div>
+            <div class="item1"></div>
+            <div class="item1"></div>
+            <div class="item1"></div>
+            <div class="item1"></div>
+            <div class="item1"></div>
+            <div class="item1"></div>
+            <div class="item1"></div>
+            <div class="item1"></div>
+            <div class="item1"></div>
+        </div>
+    </main>
+
+    <br>
+    <hr>
+    <br>
+    <!-- Part-2 -->
+
+
+    <main>
+        <div class="container2">
+            <div class="item2"></div>
+            <div class="item2"></div>
+            <div class="item2"></div>
+            <div class="item2"></div>
+            <div class="item2"></div>
+            <div class="item2"></div>
+            <div class="item2"></div>
+            <div class="item2"></div>
+            <div class="item2"></div>
+            <div class="item2"></div>
+            <div class="item2"></div>
+            <div class="item2"></div>
+            <div class="item2"></div>
+            <div class="item2"></div>
+
+
+
+        </div>
+    </main>
+
+</body>
+
+</html>

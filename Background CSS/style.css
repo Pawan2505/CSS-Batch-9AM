@@ -1,0 +1,99 @@
+.color {
+  color: blue;
+  background-color: bisque;
+}
+
+/* .image {
+  width: 300px;
+  height: 300px;
+  background-image: url("./Image/photo.jfif");
+  background-repeat: no-repeat;
+  background-size: 500px;
+  /* background-clip: border-box; */
+  background-clip: padding-box;
+} */
+
+/* 1. Linear Gradients
+A linear gradient transitions colors along a straight line.
+
+Directional Keywords:
+
+to top
+to bottom
+to left
+to right
+
+*/
+
+.div1 {
+  width: 300px;
+  height: 100px;
+  background: linear-gradient(to right, red, yellow);
+}
+
+.div2 {
+    width: 300px;
+    height: 100px;
+  background: linear-gradient(45deg, blue, green);
+}
+
+.div3 {
+    width: 300px;
+    height: 100px;
+  background: linear-gradient(to right, red, yellow, green);
+}
+
+.div4 {
+    width: 300px;
+    height: 100px;
+    background: linear-gradient(to right, red 20%, yellow 50%, green 80%);
+}
+
+/* 
+2. Radial Gradients
+A radial gradient transitions colors in a circular or elliptical shape.
+
+Shape and Size:
+
+1. circle
+2. ellipse
+
+background: radial-gradient(shape size at position, start-color, ..., last-color);
+
+
+*/
+
+.div5 {
+    width: 300px;
+    height: 100px;
+    background: radial-gradient(circle, red, yellow, green);
+}
+
+.div6 {
+    width: 300px;
+    height: 100px;
+    background: radial-gradient(circle, red, yellow 30%, green 60%, blue 90%);
+}
+
+/* 3. Repeating Gradients
+CSS also supports repeating gradients. These can be either linear or radial and repeat the gradient pattern infinitely. */
+
+.div6 {
+    width: 300px;
+    height: 100px;
+    background: repeating-linear-gradient(to right, red, yellow 10%, green 20%);
+}
+
+.div7 {   
+    width: 300px;
+    height: 100px;
+    background: repeating-radial-gradient(circle, red, yellow 10%, green 20%);
+}
+
+
+.divimage{
+  width: 500px;
+  height: 500px;
+  background-image: url('./Image/photo.jfif');
+  background-repeat: no-repeat;
+}

@@ -1,0 +1,75 @@
+/* CSS Position:
+
+1. static :1. Default positioning for HTML elements.  
+
+           2. top, right, bottom, and left properties have no effect.
+
+2. relative :  is positioned relative to its normal position.
+
+3. absolute: is positioned relative to the nearest positioned Parent
+
+4. fixed : is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled.
+
+5. sticky : is positioned based on the user's scroll position. It toggles between relative and fixed, depending on the scroll position.
+
+
+*/
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+div {
+  padding: 20px;
+  color: white;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.static {
+  position: static;
+  background-color: #6c757d;
+}
+
+.relative {
+  position: relative;
+  top: 20px;
+  left: 10px;
+  background-color: #007bff;
+}
+
+.absolute-container {
+  position: relative;
+  height: 200px;
+  background-color: #f8f9fa;
+}
+
+.absolute {
+  position: absolute;
+  top: 50px;
+  left: 30px;
+  background-color: #28a745;
+}
+
+.fixed {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: #ffc107;
+}
+
+.sticky-container {
+  height: 500px;
+  background-color: #f8f9fa;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  background-color: #17a2b8;
+}

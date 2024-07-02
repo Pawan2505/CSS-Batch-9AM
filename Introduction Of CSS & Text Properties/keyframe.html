@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes Animation Example</title>
+    <style>
+        /* Define the keyframes for the animation */
+        @keyframes myAnimation {
+            0% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+            50% {
+                background-color: yellow;
+                left: 500px;
+                top: 800px;
+            }
+            100% {
+                background-color: green;
+                left: 600px;
+                top: 200px;
+            }
+        }
+
+        /* Style the div and apply the animation */
+        div {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            background-color: red;
+            animation: myAnimation 4s infinite alternate;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
