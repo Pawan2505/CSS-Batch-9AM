@@ -34,7 +34,7 @@ div {
 
 /* Multiply Blend */
 .multiply {
-  background-blend-mode: multiply;
+  background-blend-mode: normal;
   background-color: rgba(40, 167, 69, 0.5);
 }
 
