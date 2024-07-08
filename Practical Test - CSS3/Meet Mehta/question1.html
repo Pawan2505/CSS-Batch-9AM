@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question no.1</title>
+    <link rel="stylesheet" href="1.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main-container {
+            /* display: flex;
+justify-content: center;
+align-items: center; */
+            background-color: white;
+            height: 500px;
+            width: 600px;
+            border-radius: 20px;
+            margin-top: 25px;
+            margin-right: 250px;
+            margin-left: 250px;
+        }
+
+        /* title-container{
+
+} */
+        h4,
+        h1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .firstname {
+            font-weight: bold;
+            margin-top: 100px;
+            margin-left: 100px;
+            display: flex;
+            gap: 150px;
+        }
+
+        .lastname {
+            font-weight: bold;
+            margin-left: 100px;
+            display: flex;
+            gap: 50px;
+        }
+
+        .gender {
+            font-weight: bold;
+            margin-top: 50px;
+            margin-left: 100px;
+            display: flex;
+            gap: 170px;
+        }
+
+        .email {
+            font-weight: bold;
+            margin-left: 100px;
+            display: flex;
+            gap: 120px;
+        }
+
+        .phone {
+            font-weight: bold;
+            margin-top: 50px;
+            margin-left: 100px;
+            display: flex;
+            gap: 180px;
+        }
+
+        .Contact {
+            font-weight: bold;
+            margin-left: 100px;
+            display: flex;
+            gap: 50px;
+        }
+
+        button {
+            background-color: green;
+            height: 20px;
+            width: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 70px;
+            margin-left: 250px;
+        }
+    </style>
+</head>
+
+<body bgcolor="orange">
+    <div class="main-container">
+        <div class="title-conatiner">
+            <h1>Conatct Us Form</h1>
+            <h4>Fill out the form carefully</h4>
+        </div>
+
+        <div class="firstname">
+            <p>First Name</p>
+            <p>Last Name</p>
+
+        </div>
+        <div class="lastname">
+            <input type="text" placeholder="First name">
+            <input type="text" placeholder="last name">
+        </div>
+        <div class="gender">
+            <p>Gender</p>
+            <p>Customer's Email</p>
+        </div>
+        <div class="email">
+            <select name="gender" id="">
+                <option value="gender">Male</option>
+                <option value="gender">Female</option>
+                <option value="gender">Transgender</option>
+            </select>
+            <input type="email" name="Customer email" placeholder="ex:- abc@mail.com">
+        </div>
+        <div class="phone">
+            <p>Phone</p>
+            <p>Reason for Contact</p>
+        </div>
+        <div class="Contact">
+            <input type="tel" placeholder="Phone no.">
+            <input type="text" name="Customer Reason" placeholder="Reason for Conatct">
+        </div>
+        <button>Submit</button>
+    </div>
+</body>
+
+</html>
