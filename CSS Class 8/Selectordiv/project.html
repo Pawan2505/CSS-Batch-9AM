@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector Div</title>
+
+    <style>
+        div {
+            background-color: cadetblue;
+        }
+
+        div p {
+            margin-left: 300px;
+        }
+
+        div>p {
+            color: brown;
+        }
+
+        p::first-letter {
+            color: blue;
+            font-size: 20px;
+            font-weight: 900;
+        }
+
+        /* p::first-line {
+            font-style: italic;
+        } */
+
+        /* p:nth-child(2)::first-line {
+            font-style: italic;
+        } */
+
+        /* p:first-child{
+            font-style: italic;
+        } */
+
+        /* p:last-child{
+            font-style: italic;
+        } */
+        p:nth-last-child(2) {
+            font-style: italic;
+        }
+
+        .heading::selection {
+            background: greenyellow;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, inventore. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Dolor eos, neque unde magnam sapiente suscipit pariatur nemo quibusdam quo
+            earum. Dolorum omnis earum laboriosam amet numquam? Minima harum et sit quis? Harum ducimus, incidunt ab
+            molestias nihil ex corrupti voluptatibus hic commodi nulla atque veniam sequi sed aliquam possimus. Id
+            inventore soluta, officiis maiores ea consectetur dolor similique cupiditate fugit adipisci cum aperiam
+            laborum molestias ullam, illo exercitationem temporibus, ducimus sequi ex omnis enim nisi in iure eaque?
+            Aliquam sit sed facere deserunt? Corporis debitis perferendis a, eaque facere facilis aliquid modi
+            recusandae architecto ut, enim provident veniam nihil asperiores neque unde rem, incidunt accusantium
+            numquam molestias. Velit perspiciatis facilis sequi officiis commodi consequatur dolor fugiat sint omnis
+            ullam. Rem dolorem incidunt architecto sed provident amet corrupti labore nam eveniet dolor? Voluptate
+            explicabo repellat dicta ea iure ratione itaque optio nihil omnis aut fugit magni iste totam tempore
+            perferendis, modi quia iusto. Doloremque nihil, reiciendis exercitationem in ullam soluta accusantium quam,
+            consequatur voluptatem, sint enim saepe eligendi molestiae magni! Culpa veniam totam est nam. Itaque saepe
+            deleniti inventore neque, tempore quod sapiente tenetur soluta doloribus mollitia maxime repellendus, nobis
+            perferendis accusamus quas nemo, vitae animi? Doloremque quia at rerum, officiis labore earum quo commodi.
+            Nisi minus eum debitis voluptas, placeat, tenetur velit quo at est vitae ullam ex non deserunt veritatis
+            labore et, tempore explicabo recusandae nihil magni. Deleniti impedit temporibus quis accusantium! Natus,
+            reiciendis adipisci laboriosam quo voluptas hic cum, ab quidem quaerat veritatis esse deleniti aperiam
+            exercitationem ipsa aliquid asperiores. Eius et illum nulla. Maxime corrupti quis culpa molestiae quod a
+            odit laborum ea expedita minima iste unde eligendi atque nostrum perferendis, delectus, animi magnam illo
+            cumque enim laudantium ullam aliquid. Assumenda rerum nihil dignissimos iste perferendis nostrum quasi
+            saepe, cupiditate, sunt voluptate reiciendis dicta ullam reprehenderit perspiciatis corrupti neque impedit
+            natus. Vero dolorem architecto nam quos animi corporis ipsa, fugiat quidem a magni minima porro labore,
+            exercitationem, blanditiis rem aliquam mollitia illum. Quasi assumenda deleniti officiis eum itaque voluptas
+            illum. Vero voluptatem nobis commodi fugiat iure natus libero atque deleniti veritatis iste quo, ea dicta
+            dolorem esse optio, dolorum aut rerum quod enim delectus nulla corporis. Provident nisi dignissimos magni
+            totam ullam quidem alias odio quod deleniti ratione cum inventore unde eos, consequuntur quas voluptas nulla
+            cumque nostrum vero maiores laudantium illo. Accusantium explicabo consequuntur labore voluptas, rem
+            similique impedit libero ex hic natus odit commodi magni laboriosam qui praesentium distinctio voluptates
+            optio nobis quas autem quisquam, error debitis? Molestias qui deleniti consectetur cum debitis eaque
+            voluptatem, rerum voluptate totam reprehenderit, odio, porro provident ea maxime sed itaque magnam illum
+            architecto reiciendis nostrum animi! Exercitationem, ad sunt! Recusandae inventore ad doloremque debitis
+            harum consequatur, ratione nisi earum itaque dolorum quae animi ipsum sit reprehenderit dolorem quasi
+            deserunt repellendus repudiandae praesentium dolor ipsam voluptatum odio quia. Veritatis qui explicabo et
+            dolores, rem exercitationem perspiciatis nobis voluptas quaerat facere laborum, voluptates facilis numquam
+            minima harum quas nam iusto. Pariatur iusto quisquam sit molestiae iure minus enim quasi aliquid dolorem.
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, inventore.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, inventore.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, inventore.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, inventore.</p>
+    </div>
+
+    <h1 class="heading">Lorem ipsum dolor sit amet.</h1>
+</body>
+
+</html>

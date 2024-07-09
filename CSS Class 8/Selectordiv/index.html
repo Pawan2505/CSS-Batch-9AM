@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div p {
+            margin-left: 50px;
+        }
+
+        div>p {
+            color: red;
+        }
+
+        p:first-child {
+            text-transform: uppercase;
+        }
+
+        p:last-child {
+            color: green;
+        }
+
+        p:nth-child(2) {
+            font-style: italic;
+        }
+
+        p:nth-last-child(1) {
+            font-size: 200px;
+        }
+
+        h1::selection {
+            background: green;
+            color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, consequuntur!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, sequi?</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non, possimus?</p>
+    </div>
+
+    <h1>Lorem ipsum dolor sit amet.</h1>
+</body>
+
+</html>
