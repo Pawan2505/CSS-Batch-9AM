@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 Attribute</title>
+    <style>
+        .tranformation {
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            border: 2px solid;
+            text-align: center;
+            /* display: flex ;
+            justify-content: center;
+            align-items: center; */
+            margin: 100px;
+            display: inline-block;
+        }
+
+        .scale:hover {
+            background-color: blue;
+            transform: scale(1.5);
+            transition: all 0.5s ease-out;
+        }
+
+        .rotate:hover {
+            background-color: blueviolet;
+            transform: rotate(360deg);
+            transition: all 0.6s ease-in-out;
+        }
+
+        .skew {
+            background-color: brown;
+            /* transform: skewX(40deg);
+            transform: skewY(60deg); */
+            transform: skew(45deg, 10deg);
+        }
+
+        .translate:hover {
+            background-color: cadetblue;
+            /* transform: translateX(100px);
+            transform: translateY(200px); */
+            /* transform: translate(100px, 200px); */
+            /* transform: translateZ(300px); */
+            transform: translate3d(100px, 200px, 300px);
+            transition: all 0.6s ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tranformation scale">Scale</div>
+    <div class="tranformation rotate">Rotate</div>
+    <div class="tranformation skew">Skew</div>
+    <div class="tranformation translate">Translate</div>
+</body>
+
+</html>
