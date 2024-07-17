@@ -1,0 +1,28 @@
+.container {
+  width: 800px;
+  height: 800px;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid;
+  margin-left: 600px;
+}
+
+.row {
+  height: 200px;
+}
+.box1 {
+  background-color: #dca47c;
+  width: 100px;
+  height: 100px;
+  font-size: 70px;
+  text-align: center;
+}
+
+.box2 {
+  background-color: bisque;
+  width: 100px;
+  height: 100px;
+  font-size: 70px;
+  text-align: center;
+}
