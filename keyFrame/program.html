@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Keyframes </title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #4CAF50;
+            color: white;
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            /* position: relative; */
+            margin-top: 50px;
+            animation: moveBox 4s infinite;
+
+        }
+
+
+        @keyframes moveBox {
+            0% {
+                transform: translateY(0px);
+
+            }
+
+            50% {
+                transform: translateY(100px);
+
+            }
+
+            100% {
+                transform: translateY(0px);
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">Animate Me!</div>
+</body>
+
+</html>

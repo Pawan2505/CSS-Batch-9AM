@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keyframes</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            background-color: lightseagreen;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            color: #fff;
+            background-color: rgb(3, 11, 14);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* margin: 100px; */
+            position: relative;
+            animation: myanimation 5s ease-in-out;
+
+        }
+
+        /* @keyframes myanimation {
+            0% {
+                left: 0px;
+                top: 0px;
+            }
+
+            50% {
+                left: 200px;
+                bottom: 500px;
+            }
+
+            100% {
+                left: 0px;
+                bottom: 50px;
+                background-color: blue;
+            }
+        } */
+
+        @keyframes myanimation {
+            from {
+                transform: translateX(0px);
+                transition: all 5s ease-in-out;
+            }
+
+            to {
+                transform: translateX(500px);
+                
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box">Box</div>
+    </div>
+
+
+</body>
+
+</html>

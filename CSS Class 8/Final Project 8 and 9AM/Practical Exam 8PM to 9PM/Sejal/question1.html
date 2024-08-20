@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: lightcyan;
+        }
+
+        h1 {
+            font-size: xx-large;
+            padding: 15px;
+            padding-left: 50px;
+            padding-top: 50px;
+        }
+
+        .form {
+            justify-content: center;
+            align-items: center;
+            align-self: center;
+            background-color: antiquewhite;
+            border: 5px solid;
+            width: 450px;
+            height: 500px;
+            line-height: 45px;
+            font-size: larger;
+            padding: 50px;
+            margin: 15px;
+        }
+
+        button {
+            background-color: lightblue;
+            padding: 15px;
+            border-radius: 15px;
+            margin: 25px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Please Fill The Required Form</h1>
+    <div class="form">
+        <form action="" method="post">
+            <label>First Name:</label>
+            <input type="text" placeholder="Enter your first name" required><br>
+            <label>Last Name:</label>
+            <input type="text" placeholder="Enter your last name" required><br>
+            <label>Email:</label>
+            <input type="email" placeholder="Enter your email" required><br>
+            <label>Contact No.:</label>
+            <input type="tel" placeholder="Enter your contact number" required><br>
+            <label>Password:</label>
+            <input type="password" placeholder="Enter your password" required><br>
+            <label>DOB:</label>
+            <input type="date" placeholder="Enter your Date of Birth"><br>
+            <label>Document File:</label>
+            <input type="file"><br>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </div>
+</body>
+
+</html>

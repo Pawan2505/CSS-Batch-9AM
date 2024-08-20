@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .footer{
+          background-color: lightgray;
+          display: flex;
+          height: fit-content;
+        }
+        .icon{
+            font-size: 45px;
+        }
+        .form{
+            /* border: 2px solid; */
+            width: 450px;
+            height: 350px;
+            padding: 15px;
+            margin: 40px;
+            font-size: 25px;
+            margin-left: 50px;
+            padding-top: 15px;
+            margin-left: 85px;
+            line-height: 55px;
+            justify-content: center;
+        }
+        button{
+            background-color: darkcyan;
+            padding: 10px;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+        .link{
+            /* border: 2px solid; */
+            display: flex;
+            font-size: 25px;
+            text-decoration: none;
+            padding: 15px;
+            margin: 50px;
+            margin-left: 150px;
+            margin-top: 45px;
+            height: fit-content;
+            flex-direction: column;
+            align-items: center;
+        }
+        .link a:hover{
+            color: coral;
+            transition: all 1s;
+        }
+        .link a{
+            color: black;
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+        }
+        .contact{
+            /* border: 2px solid ; */
+            width: 350px;
+            height: 350px;
+            margin: 40px;
+            margin-left: 70px;
+            padding: 50px;
+            font-size: 20px;
+            line-height: 35px;
+        }
+        .logo{
+            background-color: lightgray;
+            align-items: center;
+            justify-content: center;
+            padding-left: 780px;
+            font-size: 25px;
+            cursor: pointer;
+        }
+        .logo a{
+            color: black;
+        }
+        input{
+            font-size: 17px;
+        }
+    </style>
+</head>
+<body>
+    <footer>
+        <div class="footer">
+            <div class="icon">
+                <i class="fa-sharp-duotone fa-solid fa-scroll">Scroll</i>
+            </div>
+            <div class="form">
+                <form action="" method="post">
+                <h1>Newsletter Sign-up Form</h1>
+                <p>Sign-up for regular updates </p>
+                <label>Email:</label>
+                <input type="email" placeholder="enter your email" required><br>
+                <label>Contact No.:</label>
+                <input type="tel" placeholder="enter your number" ><br>
+                <button type="submit">Submit</button>
+            </form>
+            </div>
+            <div class="contact">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>123, Anytown, India</p>
+                <i class="fa-solid fa-phone"></i>
+                <p>101-181-8001</p>
+                <i class="fa-solid fa-envelope"></i>
+                <p>info25@gmail.com</p>
+            </div>
+            <div class="link">
+                <a href="#">Home</a><br>
+                <a href="#">Product</a><br>
+                <a href="#">About</a><br>
+                <a href="#">Services</a><br>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+        <div class="logo">
+           <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+           <a href="https://x.com/?lang=en" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://in.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </footer>
+</body>
+</html>

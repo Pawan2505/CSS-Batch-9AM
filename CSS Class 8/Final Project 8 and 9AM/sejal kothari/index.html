@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .header{
+            background-color: bisque;
+        }
+        .head{
+            color: aliceblue;
+            font-family: 'Bona Nova SC', serif;
+            font-size: 17px;
+            padding-left: 10px;
+            text-decoration: none;
+        }
+        .top{
+            width: 100%;
+            height: 100px;
+            background-color: palevioletred;
+            /* justify-content: center; */
+        }
+        .row{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            justify-content: center;
+            align-items: center;
+            font-weight: 900;
+            /* padding: 5px; */
+            /* margin: 10px; */
+        }
+        .box1{
+            justify-content: center;
+            align-items: center;
+            background-color: antiquewhite;
+            border-radius: 35px;
+            width: 350px;
+            text-align: center;
+            padding: 25px;
+            margin-top: 35px;
+        }
+        .button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+            float: none;
+            text-decoration: none;
+            margin-top: 5px;
+            padding: 30px;
+            color: black;
+        }
+        .box a:hover{
+            color: antiquewhite;
+            transition: 1s ease-in-out;
+        }
+        .img{
+            margin-top: 2px;
+            position: relative;
+        }
+        .center{
+            position: absolute;
+            width: 100%;
+            font-size: 50px;
+            font-weight: 1000;
+            font-family:  "Bona Nova SC", serif;
+            color:white;
+        }
+        .center1{
+            position: absolute;
+            top: 30%;
+            text-align: center;
+        }
+        .center2{
+            position: absolute;
+            top: 50%;
+            text-align: center;
+        }
+        .content{
+            margin-top: 0;
+            background-color: rgb(255, 246, 253);
+            height: fit-content;
+        
+        }
+        .dis{
+            background-color: lightcyan;
+        }
+        .hr{
+            margin-top: 0;
+            padding-top: 0;
+            color: lightsalmon;
+            text-align: center;
+            font-size: 100px;
+        }
+        .font{
+            text-align: center;
+            font-size: 45px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .about{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 45px;
+            justify-content: center;
+        }
+        .info {
+        margin: 55px;
+        /* border: 2px solid black; */
+        padding: 15px;
+        }
+        .info1{
+            line-height: 35px;
+            font-size: larger;
+            width: 350px;
+        }
+        .info2{
+            width: 380px;
+        }
+        .info3{
+            line-height: 35px;
+            font-size: larger;
+            width: 350px;
+        }
+        .pic{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            align-self: center;
+        }
+        .product{
+        position: relative;
+        }
+        .learn{
+            border-radius: 60px;
+            padding: 15px;
+            line-height: 15px;
+            font-size: large;
+            background-color: #62c3e7;
+            cursor: pointer;
+        }
+       .h1{
+        position: absolute;
+        width: 100%;
+        font-size: 50px;
+        font-weight: 1000; 
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color:white;
+        text-align: center;
+        top: 50%;
+    }
+    .menu{
+        margin-top: 5px;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+    }
+       .choco{
+        position: relative;
+        width: 500px;
+        flex-wrap: wrap;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 5px;
+       }
+       .mation{
+        height: fit-content;
+        margin-top: 0;
+        background-color: rgb(255, 246, 253);
+       }
+       .service{
+        display: flex;
+       }
+       .space{
+        font-size: 50px;
+        text-align: center;
+        padding-bottom: 5px;
+    }
+      .ser{
+        padding-top: 5px;
+        font-size: 20px;
+        text-align: center;
+       }
+       .square{
+        border: 2px solid black;
+        width: 450px;
+        height: 350px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 15px;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+        font-size: larger;
+       }
+       .contact{
+        margin-top: 10px;
+        background-color: rgb(255, 246, 253);
+       }
+       .h2{
+        font-size: 30px;
+        text-align: center;
+       }
+       .p1{
+        font-size: 20px;
+        text-align: center;
+       }
+       .form{
+        border: 2px solid black;
+        width: 300px;
+        height: 385px;
+        padding: 15px;
+        align-items: flex-start;
+        font-size: 20px;
+        margin: 15px;
+       }
+       .send{
+        background-color: lightpink;
+       }
+       .reach{
+        margin: 15px;
+        justify-content: right;
+        border: 2px solid black;
+        width: fit-content;
+        height: 150px;
+       }
+       .map{
+        justify-content: right;
+       }
+       .place{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+       }
+       .footer{
+        background-color: lightgrey;
+        display: flex;
+        height: fit-content;
+       }
+       .visit{
+        padding: 15px;
+        font-size: 20px;
+        margin: 15px;
+        /* border: 2px solid black; */
+        width: 400px;
+        height: 270px;
+        justify-content: left;
+        align-items: start;
+        margin-top: 55px;
+       }
+       .more{
+        padding: 15px;
+        font-size: 20px;
+        /* border: 2px solid black; */
+        justify-content: center;
+        align-items: center;
+        height: 250px;
+        width: 300px;
+        margin: 15px;
+        /* margin-top: 55px; */
+        margin-left: 215px;
+        padding-top: 45px;
+       }
+       .link{
+        text-align: center;
+        width: 200px;
+        /* border: 2px solid black; */
+        margin: 25px;
+        margin-left: 200px;
+        padding: 15px;
+        margin-top: 35px;
+       }
+       a{
+        text-decoration: none;
+        line-height: 45px;
+        font-size: larger;
+        display: flex;
+        color: black;
+       }
+       .link a:hover{
+        color: chocolate ;
+        transition: 1s ease-in-out;
+       }
+       .more i{
+        cursor: pointer;
+        letter-spacing: 20px;
+       }
+       .end{
+        background-color: lightgray;
+      
+       }
+       hr{
+        border: 2px solid black;
+       }
+       .p8{
+        padding-left: 580px;
+       }
+       .start{
+        padding-left: 785px;
+       }
+    </style>
+</head>
+<body>
+                 <!-- HEADER -->
+<header>
+    <div class="header" id="start">
+        <h1 class="head"> <a href="">FAQs |HELP | SUPPORT </a></h1>
+    </div>
+</header>
+                <!-- NAVIGATION BAR -->
+ <nav>
+    <div class="top">
+        <div class="row">
+           <div class="box">
+            <a href="#home"class="button" target="_blank">HOME</a>
+           </div> 
+           <div class="box">
+            <a href="#product"class="button" target="_blank"> OUR PRODUCT</a>
+           </div>
+           <div class="box box1">
+            <h1 style="font-family: Bona Nova SC, serif;"><i><b>Scoops N’ Smiles</b></i></h1>
+           </div>
+           <div class="box">
+            <a href="#about"class="button" target="_blank">ABOUT</a>
+           </div>
+           <div class="box">
+            <a href="#services"class="button" target="_blank">SERVICES</a>
+           </div>
+           <div class="box">
+            <a href="#contact"class="button" target="_blank">CONTACT</a>
+           </div>
+        </div>
+    </div>
+</nav>
+        <!-- CONTENT -->
+    <div class="slide" id="home">
+        <div class="img">
+             <img src="./Pictures of food • Foodiesfeed • Food pictures.jpg" alt="" width="100%" height="650px" class="Ice">
+             <div class="center center1">Traditional & Delicious</div><br>
+             <div class="center center2">Traditional Ice cream <br> Since 1950</div>
+        </div>
+   </div>
+   <div class="slide" id="home">
+    <div class="img">
+        <img src="./Premium Photo _ Various of ice cream flavor in cones setup on dark stone background _.jpg" alt="" width="100%" height="650px" class="Ice">
+        <div class="center center1">Traditional & Delicious</div><br>
+        <div class="center center2">Made From Our Own <br>Organic Milk</div>
+    </div>
+   </div>
+                <!-- ABOUT US  -->
+   <section>
+    <div class="content" id="about">
+            <h1 class="hr">___</h1>
+            <h1 class="font">Traditional & Delicious Ice  <br>cream Since 1950</h1>
+            <div class="about">
+                    <div class="info info1">
+                    <h1 >ABOUT US</h1>
+                    <h3>Scoops N’ Smiles</h3>
+                    <p>We’re here to add a little extra sweetness to your day. <br> The Ice Cream Shop is a virtual restaurant and new way to order your favorite ice cream brands right to your front door. <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, laboriosam</p>
+                    <button class="learn" type="button">Learn More</button>
+                    </div>
+                    <div class="info info2">
+                        <img src="./Ice cream PNG image image with transparent background.jpg" alt="" width="350px" height="350px" class="pic">
+                    </div>
+                    <div class="info info3">
+                        <h1>Our Features</h1>
+                        <p>The physical characteristics of ice cream include its textural quality, shape retention, and structural collapse during melting. <br> The physical characteristics of the ice cream samples in the study include overrun, viscosity, and melting rate. <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur.</p>
+                        <button class="learn" type="button">Learn More</button>
+                    </div>
+             </div>
+    </div>
+   </section>
+        <!-- PRODUCT  -->
+   <section>
+      <div class="product" id="product">
+        <img src="./8 Unique Paletas Recipes Perfect for Cinco de Mayo.jpg" alt="" width="100%"
+        height="350px" class="pop"> 
+        <h1 class="h1">Products</h1>
+        <br>
+      </div>
+      <div class="menu">
+        <img src="./Chocoholic's Dream_ Scrumptious Chocolate Icecream Tub.jpg" alt="" class="choco choco1">
+        <img src="./Frozen Banana Ice Cream Bars _ Love and Olive Oil.jpg" alt="" class="choco choco2">
+        <img src="./ice cake.avif" alt="" class="choco choco3">
+        <img src="./Ice cream balls in paper cup.jpg" alt="" class="choco choco4"><br>
+        <img src="./Almond Magnum Ice Cream (Vegan) - Nutriholist.jpg" alt="" class="choco choco5">
+        <img src="./Black Forest Ice Cream Sundae (Vegan) - Bakemas Day 12.jpg" alt="" class="choco choco6">
+      </div>
+   </section>
+   <br><br>
+         <!-- SERVICES -->
+   <section>
+    <div class="mation" id="services">
+        <h1 class="space">_____</h1>
+        <p class="ser">Best Services We Provide For Our Clients</p>
+        <div class="service">
+       <div class="square">
+        <h1>Quality Maintain</h1>
+        <p>Great ice cream uses fresh, natural, flavorful ingredients and doesn’t spare on the fat content. It has a rich, creamy texture, is clean on the palate, melts in your mouth, and above all isn’t icy.</p>
+       </div>
+       <div class="square">
+        <h1>Customer Satisfaction</h1>
+        <p>Our goal is to make sure you have a great experience with our ice cream. We strive to put a smile on every face with every scoop. Whether you're a classic vanilla fan or an adventurous flavor-seeker, we're dedicated to making every bite a joyful one.</p>
+       </div>
+       <div class="square">
+        <h1>Delicious Taste</h1>
+        <p>Our ice cream is made with the finest ingredients and is carefully crafted to provide a rich, creamy, and indulgent treat that will tantalize your taste buds. With a wide range of flavors to choose from, every bite is a delight for the senses. From classic vanilla and chocolate to unique and adventurous flavors, our ice cream is sure to satisfy your cravings and leave you wanting more."
+       </div>
+       </div>
+    </div>
+   </section>
+   <!-- CONTACT -->
+   <section>
+    <div class="contact" id="contact">
+        <div class="us">
+            <h1 class="h2">Get in Touch</h1>
+            <p class="p1">If you have any questions or would like to get in touch please contact us by the information given below</p>
+            <div class="place">
+            <form action="" class="form">
+                <label for="">Name:</label>
+                <input type="text" name="name" placeholder="Your Name"><br><br><br>
+                <label for="">Email:</label>
+                <input type="email" name="email" placeholder="Your Email"><br><br><br>
+                <label for="">Phone:</label>
+                <input type="tel" name="phone" placeholder="Your Phone Number"><br><br><br>
+                <label for="">Message:</label>
+                <textarea name="message" rows="5" placeholder="Your Message"></textarea><br><br><br>
+                <button type="submit" class="Send" style="background-color: palevioletred; border-radius: 50px; padding: 5px;">Send</button><br>
+            </form>
+        </div>
+        <div class="reach">
+            <h1 class="h3">Reach Us</h1>
+            <p class="p2">You can reach us at the following address:</p>
+            <p class="p3">Address: 123 Main St, Anytown, INDIA <br>
+                Phone: 101-181-1080 <br>
+                Email: [info@Scoops N’ Smiles.com]
+                </p>
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14692.170609364857!2d72.60328925!3d22.985459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1722234536571!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    </div>
+   </section>
+   <!-- FOOTER -->
+   <footer>
+    <div class="footer">
+        <div class="visit">
+                <h1 class="h4">Visit Us</h1>
+                <p class="p4">Scoops N' Smiles is a popular ice Cream shop <br>located in the heart of Anytown, INDIA. We are known for our <br> delicious and unique 
+                flavors of ice cream that are sure to satisfy your cravings. Our shop is open 7 days
+                a week from 10am to 10pm. <br> We look forward to serving you!</p>
+                <i class='far fa-copyright'></i>  Company Inc.
+        </div>
+        <div class="more">
+            <h1 class="h5">Contact Us</h1>
+            <i class="fa-solid fa-location-dot fa-fade"></i>
+            <p class="p5">123 Main St, Anytown, INDIA</p>
+            <i class="fa-solid fa-phone fa-fade phone"></i>
+            <p class="p6">101-181-1080</p>
+            <i class="fa-solid fa-envelope fa-fade email"></i>
+            <p class="p7">info@Scoops N’ Smiles.com</p><br>
+            <i class='fab fa-facebook'></i>
+            <i class='fab fa-google-plus-square'></i>
+            <i class='fab fa-instagram'></i>
+            <i class='fab fa-twitter'></i>
+        </div>
+        <div class="link">
+            <h1 class="h5">Quick Links</h1>
+                <a href="#home">Home</a>
+                <a href="#product">Our Product</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+        </div>
+    </div>
+    <hr>
+    <div class="end">
+        <p class="p8"><i class='far fa-copyright'></i>Copyright 2022 Scoops N' Smiles. All rights reserved.</p>
+        <div class="start">
+          <a href="#start">  <i class='far fa-arrow-alt-circle-up'></i></a>
+        </div>
+       </div>
+   </footer>
+</body>
+</html>

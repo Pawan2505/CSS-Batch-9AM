@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Grey+Qo&display=swap");
+
+* {
+  /* container k bahar se space leta */
+
+  margin: 0px;
+
+  /* container k andar space leta hai */
+
+  padding: 0px;
+}
+
+.para {
+  word-spacing: 10px;
+  letter-spacing: 5px;
+  font-size: 34px;
+  font-weight: 800;
+  /* font-family: "Grey Qo", cursive; */
+  line-height: 40px;
+  font-family: "Baskervville SC", system-ui;
+}
+
+#heading {
+  /* text-decoration: line-through; */
+  text-decoration: underline;
+  color: lightskyblue;
+  background-color: lightcoral;
+  text-align: center;
+  /* text-align: end; */
+  text-align: start;
+  /* verticaly container k andar center kr rhe ho */
+  /* line-height: 60px; */
+  padding: 10px;
+}
+
+a {
+  /* text-decoration: none; */
+
+  font-size: 30px;
+}
+
+.para1 {
+  font-style: italic;
+  font-size: 24px;
+}
+
+#itealic {
+  font-size: 30px;
+  font-style: normal;
+}
+
+h2 {
+  /* text-transform: uppercase; */
+  text-transform: lowercase;
+}

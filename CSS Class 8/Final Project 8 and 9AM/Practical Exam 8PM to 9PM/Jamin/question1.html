@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User friendly: Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container {
+            /* border: 1px solid black; */
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(34, 32, 32);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* align-items: center; */
+        }
+        .container h1 {
+            margin: 1rem;
+            padding: 1rem;
+            text-transform: uppercase;
+            text-decoration: underline;
+        }
+        .container form {
+            height: auto;
+            width: auto;
+        }
+        .container div {
+            margin: 1rem;
+            padding: 1rem;
+            /* border: 1px solid red; */
+        }
+        .container div label {
+            font-size: 18px;
+            font-weight: 600;
+            margin: 0 .4rem;
+        }
+        .container div input {
+            padding: .5rem .8rem;
+            border-radius: 2rem;
+            /* outline: none; */
+            border: 1px solid rgb(128, 126, 126);
+            font-size: 16px;
+            background: transparent;
+            color: white;
+        }
+        .container div span {
+            font-size: 16px;
+            font-weight: 300;
+        }
+        .container div input[type="radio"] {
+            outline: inherit;
+        }
+        .container div select {
+            padding: .3rem;
+            border-radius: .2rem;
+            background: transparent;
+            color: white;
+        }
+        .container div input[type="file"] {
+            padding: .3rem;
+            border-radius: .2rem;
+            border: none !important;
+        }
+        .container .button .btn {
+            margin: .2rem;
+            color: white
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Fill this form to get addmision</h1>
+        <form action="">
+            <div class="fullname">
+                <label for="name">First Name: </label>
+                <input type="text" id="name" placeholder="Enter your name">
+            </div>
+            <div class="email-add">
+                <label for="email">Email address: </label>
+                <input type="email" id="email" size="30" placeholder="Enter your email address">
+            </div>
+            <div class="password">
+                <label for="pass">Password: </label>
+                <input type="password" id="pass" minlength="4" maxlength="8" placeholder="Enter your password">
+            </div>
+            <div class="gender">
+                <label for="gen">Gender: </label>
+                <span>Male: </span><input type="radio" name="gender" value="male">
+                <span>Female: </span><input type="radio" name="gender" value="female">
+            </div>
+            <div class="course">
+                <label for="courses">Select course: </label>
+                <span>full-stack development: </span><input type="checkbox" name="courses"
+                    value="full-stack development">
+                <span>front-end development: </span><input type="checkbox" name="courses" value="front-end development">
+                <span>back-end development: </span><input type="checkbox" name="courses" value="back-end development">
+                <span>graphics designer: </span><input type="checkbox" name="courses" value="graphics designer">
+            </div>
+            <div class="university">
+                <label for="universities">Select university: </label>
+                <select name="university" id="universities">
+                    <option value="Select University">Select University</option>
+                    <option value="GLS University">GLS University</option>
+                    <option value="Gujarat University">Gujarat University</option>
+                    <option value="Sent-xaviour University">Sent-xaviour University</option>
+                    <option value="LJ University">LJ University</option>
+                    <option value="Sal University">Sal University</option>
+                </select>
+            </div>
+            <div class="file">
+                <label for="files">Please enter your 12th result: </label>
+                <input type="file" id="files" name="file">
+            </div>
+            <div class="button">
+                <input type="submit" class="submit-btn btn" value="submit">
+                <input type="reset" class="reset-btn btn" value="reset">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
+
+

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>footer</title>
+    <link rel="icon" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        #footer {
+            background-color: rgb(20, 177, 220);
+            color: #fff;
+            padding: 50px 0;
+        }
+
+        #footer .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        #footer .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        #footer .col-lg-4 {
+            flex-basis: 33.33%;
+        }
+
+        #footer .col-md-6 {
+            flex-basis: 50%;
+        }
+
+        /* Footer Logo */
+        .footer-logo {
+            margin-bottom: 20px;
+        }
+
+        .footer-logo img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+
+        .footer-logo p {
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .social-media {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .social-media li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .social-media a {
+            color: #fff;
+            transition: color 0.2s ease;
+        }
+
+        .social-media a:hover {
+            color: #ccc;
+        }
+
+        /* Footer Menu */
+        .footer-menu {
+            margin-bottom: 20px;
+        }
+
+        .footer-menu h4 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .footer-menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-menu li {
+            margin-bottom: 10px;
+        }
+
+        .footer-menu a {
+            color: #fff;
+            transition: color 0.2s ease;
+        }
+
+        .footer-menu a:hover {
+            color: #ccc;
+        }
+
+        /* Newsletter Sign-up */
+        .newsletter-signup {
+            margin-bottom: 20px;
+        }
+
+        .newsletter-signup h4 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .newsletter-signup form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .newsletter-signup input {
+            width: 100%;
+            height: 40px;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .newsletter-signup button {
+            width: 100%;
+            height: 40px;
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-logo">
+                        <img src="logo.png" alt="Logo">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor,
+                            vestibulum magna sed, convallis ex.</p>
+                        <ul class="social-media">
+                            <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-menu">
+                        <h4> Links</h4>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="newsletter-signup">
+                        <h4>Newsletter Sign-up</h4>
+                        <form>
+                            <input type="email" placeholder="Enter your email address">
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 All Rights Reserved. Designed by RWA3 </p>
+        </div>
+    </footer>
+</body>
+
+</html>

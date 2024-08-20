@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Footer Container</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        footer{
+            background-color: black;
+            height: auto;
+            width: 100%;
+        }
+        .footercontainer{
+            display: flex;
+            margin: auto;
+           flex-flow: column;
+           align-items: center;
+        }
+         .socialicon{
+            background-color: rgb(233, 227, 227);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 30px;
+            width: 100%;
+            margin: 20px;
+         }
+         .socialicon a{
+            text-decoration: none;
+            background-color: rgb(247, 243, 243);
+            margin: 20px;
+            border-radius: 25px;
+            width: 30px;
+            text-align: center;
+         }
+         .socialicon a i{
+            color: rgb(19, 18, 18);
+            border-radius: 25px;
+            font-size: 1.5em;
+         }
+         .footercontent{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         }
+         .footercontent ul{
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+         }
+         .footercontent ul li{
+            margin: 20px;
+            font-size: 1.2em;
+         }
+         .footercontent ul li a{
+            text-decoration: none;
+            color: white;
+            text-transform: capitalize;
+            letter-spacing: 1px;
+         }
+         .footercontent ul li a:hover{
+            color: rgb(50, 50, 50);
+         }
+         .footerbottom{
+            background-color: rgb(60, 59, 59);
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.1em;
+            color: white;
+            letter-spacing: 1.1px;
+         }
+         .designer{
+            color: rgb(206, 190, 190);
+           letter-spacing: 1.4px;
+         }
+         .newslitterform{
+            display: flex;
+            justify-content: center;
+            
+         }
+         .box{
+            height: 30px;
+            margin: 10px;  
+            border-radius: 5px; 
+            border: none;  
+            color: black;
+        }
+        .button{
+            width: auto;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <footer>
+        <div class="footercontainer">
+            <div class="socialicon">
+                <a href="https://www.instagram.com/?hl=en" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.bing.com/search?q=youtube&cvid=804ac71f26454140acb130348e8b2c0c&gs_lcrp=EgZjaHJvbWUqBggBEC4YQDIGCAAQRRg5MgYIARAuGEAyBggCEAAYQDIGCAMQABhAMgYIBBAAGEAyBggFEAAYQDIGCAYQABhAMgYIBxAAGEAyBggIEEUYPdIBCDE3MzRqMGo0qAIAsAIA&FORM=ANAB01&PC=U531" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.bing.com/search?q=twitter&cvid=4b691288c61a47f6ae1c489c91d73af6&gs_lcrp=EgZjaHJvbWUqBggBEC4YQDIGCAAQRRg5MgYIARAuGEAyBggCEC4YQDIGCAMQABhAMgYIBBAuGEAyBggFEC4YQDIGCAYQLhhAMgYIBxAAGEAyBggIEC4YQNIBCDE5MTBqMGo0qAIAsAIA&FORM=ANAB01&PC=U531" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/login" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <div class="footercontent">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">News</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <form class="newslitterform">
+        <label for="gmail" class="text"></label><br>
+        <input type="gmail" placeholder="Enter Your Gmail" class="box" required>
+        <label for="button"></label>
+        <button class="box button">LOGIN</button>
+        </form>
+        <div class="footerbottom">
+            <p>copyright &copy;2024 <span class="designer">NENCY</span></p>
+        </div>
+    </footer>
+</body>
+</html>

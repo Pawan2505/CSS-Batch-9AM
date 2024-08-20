@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+
+
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            background-color: lightblue;
+            line-height: 50px;
+        }
+
+        .menu-list {
+            display: flex;
+        }
+
+        .li {
+            margin-left: 40px;
+            letter-spacing: 2px;
+            font-size: 24px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+
+        @media (min-width:700px) and (max-width:1000px) {
+            .navbar {
+                flex-direction: column;
+            }
+
+            .menu-list {
+                justify-content: center;
+            }
+
+            .logo {
+                text-align: center;
+            }
+        }
+
+        @media (max-width:699px) {
+
+            .navbar {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .menu-list {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            h1 {
+                font-size: 24px;
+                padding-left: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>LOGO</h1>
+            </div>
+            <div class="menu">
+                <div class="menu-list">
+
+                    <a href="#" class="li">Home</a>
+                    <a href="#" class="li">About</a>
+                    <a href="#" class="li">Services</a>
+                    <a href="#" class="li">Contact Us</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+</body>
+
+</html>

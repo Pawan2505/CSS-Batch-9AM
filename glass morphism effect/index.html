@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Glassmorphism</title>
+  <style>
+    body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #e09, #d0e);
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.glass-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  padding: 2rem;
+  text-align: center;
+  width: 300px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: transform 0.5s ease;
+}
+
+.shadow-card {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.text-shadow-stroke {
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.6);
+}
+
+.icon-container {
+  margin-top: 1rem;
+}
+
+.icon {
+  font-size: 2rem;
+  color: #fff;
+  transition: all 0.5s;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+  color: #ff0;
+}
+
+  </style>
+</head>
+<body>
+  <div class="glass-container">
+    <div class="glass-card shadow-card">
+      <h1 class="text-shadow-stroke">Glassmorphism</h1>
+      <p>This card has advanced shadow effects.</p>
+      <div class="icon-container">
+        <i class="icon">★</i>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

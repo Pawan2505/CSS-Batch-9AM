@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Advanced Properties</title>
+    <style>
+        /* Box Shadow */
+        .box-shadow {
+            width: 200px;
+            height: 100px;
+            background-color: #f0f0f0;
+            box-shadow: 10px 10px 5px #888888;
+            margin-bottom: 20px;
+        }
+
+        /* Text Shadow  */
+        .text-shadow {
+            font-size: 24px;
+            text-shadow: 2px 2px 5px #888888;
+            margin-bottom: 20px;
+        }
+
+        /* Text Stroke  */
+        .text-stroke {
+            font-size: 24px;
+            -webkit-text-stroke: 1px black;
+            color: white; /* Color of the text fill */
+            margin-bottom: 20px;
+        }
+
+        /* Multiple Classes  */
+        .shadow {
+            box-shadow: 5px 5px 10px #888888;
+        }
+
+        .rounded {
+            border-radius: 15px;
+        }
+
+       
+        .icon-container {
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            transition: all 0.5s; 
+            margin-bottom: 20px;
+        }
+
+        .icon-container:hover {
+            background-color: #cccccc;
+        }
+
+        .icon {
+            font-size: 24px;
+            transition: all 0.5s; 
+        }
+
+        .icon-container:hover .icon {
+            transform: scale(1.5); 
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Box Shadow -->
+    <div class="box-shadow">Box with Shadow</div>
+
+    <!-- Text Shadow -->
+    <p class="text-shadow">Text with Shadow</p>
+
+    <!-- Text Stroke -->
+    <p class="text-stroke">Text with Stroke</p>
+
+    <!-- Multiple Classes -->
+    <div class="shadow rounded">Multiple Classes</div>
+
+    <!-- Icon Hover with Transition -->
+    <div class="icon-container">
+        <i class="icon">Icon</i>
+    </div>
+
+</body>
+</html>

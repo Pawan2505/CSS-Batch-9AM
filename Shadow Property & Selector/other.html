@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .strok {
+            font-size: 24px;
+            -webkit-text-stroke: 2px black;
+            color: white;
+            /* Color of the text fill */
+            margin-bottom: 20px;
+
+        }
+
+        .icon-container {
+            width: 200px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 1s;
+        }
+
+        .icon {
+            font-size: 24px;
+            transition: all 1s;
+        }
+
+        .icon-container:hover .icon {
+            transform: scale(1.5);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="strok">Hello World Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, labore!</div>
+
+    <div class="icon-container">
+        <i class="icon">Icon</i>
+    </div>
+</body>
+
+</html>
