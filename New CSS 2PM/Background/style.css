@@ -1,0 +1,41 @@
+* {
+  margin: 0px;
+  /* padding: 0px; */
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: lightcoral;
+  /* height: 100px; */
+}
+
+.container1 {
+  /* background-image: url("https://picsum.photos/900/900"); */
+  background-image: url("./Image/img1.jfif");
+  background-size: 900px 800px;
+  height: 900px;
+  width: 900px;
+  background-repeat: no-repeat;
+}
+
+/* linearGradient */
+
+.gradient {
+  width: 200px;
+  height: 300px;
+  border: 1px solid;
+  margin: 100px;
+  background: linear-gradient(60deg, green 50%, blue 20%, orange);
+}
+
+/* radialGradient */
+
+.radial-gradient {
+    width: 200px;
+    height: 300px;
+    /* border: 1px solid; */
+    margin: 100px;
+    /* background: radial-gradient(60deg, red 30%, yellow, gray); */
+    background-image: radial-gradient(closest-side at 20% 80%, red, yellow, black);
+
+}

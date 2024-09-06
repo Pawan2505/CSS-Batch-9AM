@@ -1,0 +1,25 @@
+.hero-section {
+  display: flex;
+  background-color: lightskyblue;
+}
+
+.rating {
+  display: flex;
+}
+
+.left-container {
+  /* padding: 30px; */
+  margin: 30px;
+}
+
+h1 {
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.right-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
